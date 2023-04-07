@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 The Evolution X Project
+     Copyright (C) 2010 - 2022 AICP
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+    <!-- Whether device supports Kcal -->
+    <bool name="config_deviceSupportsKcal">true</bool>
+
+    <!-- Whether device supports Power Efficient Workqueue -->
+    <bool name="config_deviceSupportsPowerEfficientWorkqueue">true</bool>
+
+    <!-- Whether device supports System vibration intensity -->
+    <bool name="config_deviceSupportsSysVib">true</bool>
+
+    <!-- Whether device supports USB2.0 Force Fastcharge -->
+    <bool name="config_deviceSupportsUSB2FC">true</bool>
+</resources>

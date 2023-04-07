@@ -30,7 +30,7 @@ PRODUCT_PACKAGES += \
 
 # Alert slider
 PRODUCT_PACKAGES += \
-    KeyHandler \
+    OplusParts \
     tri-state-key-calibrate
 
 # APEX
@@ -250,7 +250,7 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
 
 # LiveDisplay
-PRODUCT_PACKAGES += \
+# PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.1-service.oplus
 
 # Media
@@ -307,7 +307,7 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
 
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-aicp
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
@@ -381,7 +381,8 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/oplus
+    hardware/oplus \
+    vendor/ih8sn
 
 # Storage
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
@@ -419,6 +420,7 @@ PRODUCT_PACKAGES += \
 
 # Touch
 PRODUCT_PACKAGES += \
+    TouchGestures \
     vendor.lineage.touch@1.0-service.oplus
 
 # Update engine
