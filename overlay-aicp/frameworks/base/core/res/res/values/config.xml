@@ -48,8 +48,8 @@
     <bool name="config_liveDisplayAvailable">true</bool>
     <integer name="config_defaultLiveDisplayMode">0</integer>
 
-    <!-- Paths to OP warp charging status file -->
-    <string name="config_opWarpChargerStatusPaths" translatable="false">/sys/devices/virtual/oplus_chg/battery/voocchg_ing</string>
+    <!-- Paths to VOOC charging status file -->
+    <string name="config_voocChargerStatusPaths" translatable="false">/sys/devices/platform/soc/soc:oplus,chg_intf/oplus_chg/battery/voocchg_ing</string>
 
     <!-- Whether the device supports Smart Pixels
     <bool name="config_supportSmartPixels">true</bool> -->
